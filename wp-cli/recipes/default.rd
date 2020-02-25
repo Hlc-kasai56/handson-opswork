@@ -1,10 +1,9 @@
 wpdir = "/usr/bin/"
 
-
 remote_file "#{wpdir}/wp" do
- source "http://opsworks-bootcamp-jp.s3.amazonaws.com/wordpress/wp-cli.phar"
- owner "root"
- group "root"
- mode 00755
- checksum "80e2e3a229392db6784f3be5b440e3e36a97ab57a94bdcdf7d9713003ca7b6a0"
+  source "https://download-for-aws-training2.s3-ap-northeast-1.amazonaws.com/wp-cli-1.5.1.phar"
+  owner "root"
+  group "root"
+  mode 00755
+  checksum "0cc7a95e68a2ef02fc423614806c29a8e76e4ac8c9b3e67d6673635d6eaea871"
 end
